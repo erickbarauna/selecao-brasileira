@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* 
+Typical Device Breakpoints
+--------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px 
+Tablet: 768px atpe 992px 
+Desktop: 992px até 1200px
+Grandes: acima de 1200px
+*/
+
+@media (max-width: 768px) {
+    .rumo-ao-hexa {
+        display: none;
+    }
+
+    menu > ul {
+        justify-content: end;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 10px 0 20px 10px;
+    }
+
+    .logo-top > img {
+        width: 80px;
+    }
+
+    menu {
+        width: auto;
+        position: none;
+        top: 23%;
+        right: 0%;
+    }
+
+    menu > ul {
+        display: block;
+        justify-content: end;
+    }
+
+    menu > ul > li {
+        margin-top: 10px;
+    }
+}

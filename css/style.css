@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+/* 
+Typical Device Breakpoints
+--------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px 
+Tablet: 768px atpe 992px 
+Desktop: 992px até 1200px
+Grandes: acima de 1200px
+*/
 
 :root {
     --cor0: #fdf74f;
@@ -22,6 +31,7 @@
 body, html {
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 .header {
@@ -29,13 +39,12 @@ body, html {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.523);
     padding: 25px;
     position: relative;
+    align-items: center;
+
 }
 
 .container-flex {
-    width: 57vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100vw;
 }
 
 .logo-top {
@@ -49,8 +58,15 @@ body, html {
     width: 120px;
 }
 
+menu {
+    width: 100vw;
+    position: absolute;
+    top: 45%;
+}
+
 menu > ul {
     display: flex;
+    justify-content: center;
 }
 
 menu > ul > li > a {
@@ -58,14 +74,13 @@ menu > ul > li > a {
     font-weight: 500;
     font-size: 17px;
     color: var(--cor2);
-    margin-left: 20px;
+    margin: 40px;
 }
 
-
-
-.faixa-azul {
+.faixa-top {
     height: 8px;
     width: 30vw;
+    min-width: 130px;
     max-width: 250px;
     background-color: var(--cor2);
     position: absolute;
@@ -73,3 +88,45 @@ menu > ul > li > a {
     bottom: 0;
     border-bottom: 0px solid transparent;
 }
+
+/*botão-top*/
+.cta {
+    border: none;
+    background: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    margin: 0 20px;
+}
+  
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 0px;
+    font-size: 15px;
+    padding-right: px;
+    text-transform: uppercase;
+}
+  
+.hover-underline-animation {
+    position: relative;
+    color: var(--cor2);
+    padding-bottom: 20px;
+}
+  
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor1);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/*botão-top*/

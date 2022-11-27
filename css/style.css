@@ -145,6 +145,7 @@ menu > ul > li > a {
 /*botão-top*/
 
 .main {
+    height: 700px;
     border: 1px solid tomato;
     margin: 5px;
 }
@@ -155,7 +156,7 @@ menu > ul > li > a {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     width: 100%;
     padding: 50px 0;
     font-family: var(--font0);

@@ -10,19 +10,43 @@ Desktop: 992px até 1200px
 Grandes: acima de 1200px
 */
 
+@media (max-width: 1250px) {
+    menu {
+       
+    }
+}
+
+@media (max-width: 1050px) {
+    .logo-footer {
+        margin-bottom: 0;
+    }
+}
+
 @media (max-width: 768px) {
     .rumo-ao-hexa {
         display: none;
     }
 
-    menu > ul {
+    .container-menu {
         justify-content: end;
-        margin-right: 20px;
+    }
+
+    .cta span {
+        font-size: 16px;
+    }
+
+    .lista-footer {
+        margin-bottom: 100px;
+    }
+
+    .taca {
+        right: auto;
     }
 }
 
 @media (max-width: 400px) {
     .header {
+        height: 115px;
         padding: 10px 0 20px 10px;
     }
 
@@ -44,5 +68,13 @@ Grandes: acima de 1200px
 
     menu > ul > li {
         margin-top: 10px;
+    }
+
+    .cta span {
+        font-size: 15px;
+    }
+
+    .logo-footer {
+        width: 70px;
     }
 }

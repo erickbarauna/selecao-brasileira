@@ -78,3 +78,13 @@ Grandes: acima de 1200px
         width: 70px;
     }
 }
+
+@media (max-width: 300px) {
+    .logo-footer {
+        margin: 10px;
+    }
+
+    .lista-footer {
+        margin: 0px 0px 60px 0px;
+    }
+}

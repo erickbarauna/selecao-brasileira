@@ -67,7 +67,7 @@ Grandes: acima de 1200px
     transform: scale(1.03);
 }
 
-.imagem > img {
+.imagem > a > img {
     width: 100%;
     height: 100%;
     max-height: 855px;

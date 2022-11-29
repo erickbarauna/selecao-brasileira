@@ -109,7 +109,7 @@ Grandes: acima de 1200px
     justify-content: center;
 }
 
-.imagem > img {
+.imagem > a > img {
     max-width: 100%;
     width: 390px;
     background: url(../img/neymarjr.jpeg) center center no-repeat;
@@ -117,11 +117,3 @@ Grandes: acima de 1200px
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.214);
     border: 3px solid #fff700; 
 }
-
-
-
-   
-   
-
-
-       

@@ -2,25 +2,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-/* 
-Typical Device Breakpoints
---------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px 
-Tablet: 768px atpe 992px 
-Desktop: 992px até 1200px
-Grandes: acima de 1200px
-*/
-
 :root {
     --cor0: #fdf74f;
-    --cor1: #07286F;
+    --cor1: #000000;
     --cor2: #14b557;
-    --cor3: #4BFE23;
+    --cor3: #fff700;
     --cor4: #0366c2;
-    --cor5: #efeb1f;
-    --cor6: #0c663e;
-
+    
     --font0: 'Poppins', 'arial';
 }
 
@@ -29,20 +17,6 @@ Grandes: acima de 1200px
     padding: 0;
     list-style-type: none;
     text-decoration: none;
-}
-
-body, html {
-
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    grid-template-areas: 
-        'header'
-        'main'
-        'footer';
 }
 
 .header {
@@ -108,7 +82,7 @@ span > a {
 .cta {
     border: none;
     background: none;
-    font-family: 'Poppins';
+    font-family: var(--font0);
     font-weight: 500;
     margin: 0 20px;
     cursor: pointer;
@@ -144,12 +118,6 @@ span > a {
     transform-origin: bottom left;
 }
 /*botão-top*/
-
-.main {
-    height: 700px;
-    border: 1px solid tomato;
-    margin: 5px;
-}
 
 .footer {
     display: flex;

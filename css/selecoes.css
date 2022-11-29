@@ -1,24 +1,14 @@
 @charset "UTF-8";
 
-/* 
-Typical Device Breakpoints
---------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px 
-Tablet: 768px atpe 992px 
-Desktop: 992px até 1200px
-Grandes: acima de 1200px
-*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 :root {
     --cor0: #fdf74f;
-    --cor1: #07286F;
+    --cor1: #000000;
     --cor2: #14b557;
-    --cor3: #4BFE23;
+    --cor3: #fff700;
     --cor4: #0366c2;
-    --cor5: #efeb1f;
-    --cor6: #0c663e;
-
+    
     --font0: 'Poppins', 'arial';
 }
 
@@ -73,13 +63,13 @@ Grandes: acima de 1200px
     max-height: 855px;
     max-width: 750px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.214);
-    border: 3px solid #fff700;
+    border: 3px solid var(--cor3);
 }
 
 .texto-selecoes {
     max-width: 750px;
     font-family: var(--font0);
-    color: var(--cor);
+    color: var(--cor1);
     text-align: justify;
 }
 
@@ -116,4 +106,3 @@ Grandes: acima de 1200px
     left: 0;
     top: 0;    
 }
-

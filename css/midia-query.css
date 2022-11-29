@@ -11,6 +11,7 @@ Grandes: acima de 1200px
 */
 
 @media (max-width: 1700px) {
+    /*SELEÇÕES*/
     .selecoes {
         display: block;
     }
@@ -19,12 +20,15 @@ Grandes: acima de 1200px
         text-align: center;
         margin: 20px 10px;
     }
+    /*SELEÇÕES*/
 }
 
 @media (max-width: 984px) {
+    /*INDEX*/
     .logo-footer {
         margin-bottom: 0;
     }
+    /*INDEX*/
 
     /*JOGADORES*/
     .jogador {
@@ -38,6 +42,7 @@ Grandes: acima de 1200px
 }
 
 @media (max-width: 768px) {
+    /*INDEX*/
     .rumo-ao-hexa {
         display: none;
     }
@@ -58,6 +63,7 @@ Grandes: acima de 1200px
         right: auto;
         margin: 0 0 35px 0;
     }
+    /*INDEX*/
 
     /*JOGADORES*/
     .texto > h1 {
@@ -81,6 +87,7 @@ Grandes: acima de 1200px
 }
 
 @media (max-width: 445px) {
+    /*INDEX*/
     .container-header {
         height: 115px;
         padding: 10px 0 20px 10px;
@@ -113,6 +120,7 @@ Grandes: acima de 1200px
     .logo-footer {
         width: 70px;
     }
+    /*INDEX*/
 
     /*JOGADORES*/
     .texto > h1 {
@@ -125,10 +133,6 @@ Grandes: acima de 1200px
     /*JOGADORES*/
 
     /*SELEÇÕES*/
-    .texto-selecoes {
-        
-    }
-
     .texto-selecoes  > h1 {
         font-size: 26px;
     }
@@ -141,6 +145,7 @@ Grandes: acima de 1200px
 }
 
 @media (max-width: 300px) {
+    /*INDEX*/
     .logo-footer {
         margin: 10px;
     }
@@ -148,4 +153,5 @@ Grandes: acima de 1200px
     .lista-footer {
         margin: 0px 0px 60px 0px;
     }
+    /*INDEX*/
 }

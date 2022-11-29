@@ -2,33 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
-/* 
-Typical Device Breakpoints
---------------------------
-Pequenas telas: até 600px
-Celular: de 600px até 768px 
-Tablet: 768px atpe 992px 
-Desktop: 992px até 1200px
-Grandes: acima de 1200px
-*/
-
 :root {
     --cor0: #fdf74f;
-    --cor1: #07286F;
+    --cor1: #000000;
     --cor2: #14b557;
-    --cor3: #4BFE23;
+    --cor3: #fff700;
     --cor4: #0366c2;
-    --cor5: #efeb1f;
-    --cor6: #0c663e;
-
+    --cor5: #ffffff;
+    
     --font0: 'Poppins', 'arial';
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
 }
 
 .main-jogadores {
@@ -62,7 +44,7 @@ Grandes: acima de 1200px
 }
 
 .jogador {
-    background-color: white;
+    background-color: var(--cor5);
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +71,7 @@ Grandes: acima de 1200px
 .texto {
     max-width: 400px;
     font-family: var(--font0);
-    color: var(--cor);
+    color: var(--cor1);
     margin: 0px 50px 0px 10px;
 
     text-align: justify;
@@ -115,5 +97,5 @@ Grandes: acima de 1200px
     background: url(../img/neymarjr.jpeg) center center no-repeat;
     background-size: cover;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.214);
-    border: 3px solid #fff700; 
+    border: 3px solid var(--cor3); 
 }

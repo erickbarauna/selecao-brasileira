@@ -10,16 +10,31 @@ Desktop: 992px até 1200px
 Grandes: acima de 1200px
 */
 
-@media (max-width: 1250px) {
-    menu {
-       
+@media (max-width: 1700px) {
+    .selecoes {
+        display: block;
+    }
+
+    .texto-selecoes {
+        text-align: center;
+        margin: 20px 10px;
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 984px) {
     .logo-footer {
         margin-bottom: 0;
     }
+
+    /*JOGADORES*/
+    .jogador {
+        display: block;
+    }
+    
+    .texto {
+        margin: 0 10px 20px 10px;
+    }
+    /*JOGADORES*/
 }
 
 @media (max-width: 768px) {
@@ -41,11 +56,32 @@ Grandes: acima de 1200px
 
     .taca {
         right: auto;
+        margin: 0 0 35px 0;
     }
+
+    /*JOGADORES*/
+    .texto > h1 {
+        font-size: 35px;
+    }
+
+    .texto > p {
+        font-size: 15px;
+    }
+    /*JOGADORES*/
+
+    /*SELEÇÕES*/
+    .texto-selecoes  > h1 {
+        font-size: 35px;
+    }
+
+    .texto-selecoes > p {
+        font-size: 15px;
+    }
+    /*SELEÇÕES*/
 }
 
-@media (max-width: 400px) {
-    .header {
+@media (max-width: 445px) {
+    .container-header {
         height: 115px;
         padding: 10px 0 20px 10px;
     }
@@ -77,6 +113,31 @@ Grandes: acima de 1200px
     .logo-footer {
         width: 70px;
     }
+
+    /*JOGADORES*/
+    .texto > h1 {
+        font-size: 27px;
+    }
+
+    .texto > p {
+        font-size: 14px;
+    }
+    /*JOGADORES*/
+
+    /*SELEÇÕES*/
+    .texto-selecoes {
+        
+    }
+
+    .texto-selecoes  > h1 {
+        font-size: 26px;
+    }
+
+    .texto-selecoes > p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    /*SELEÇÕES*/
 }
 
 @media (max-width: 300px) {

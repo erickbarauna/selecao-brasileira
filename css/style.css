@@ -19,6 +19,7 @@ Grandes: acima de 1200px
     --cor3: #4BFE23;
     --cor4: #0366c2;
     --cor5: #efeb1f;
+    --cor6: #0c663e;
 
     --font0: 'Poppins', 'arial';
 }
@@ -45,9 +46,17 @@ body, html {
 }
 
 .header {
-    grid-area: header;
     background-color: var(--cor0);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.523);
+    display: flex;
+    justify-content: center;
+}
+
+.container-header {
+    width: 100%;
+    max-width: 1920px;
+    grid-area: header;
+    background-color: var(--cor0);
     padding: 25px;
     position: relative;
     align-items: center;
@@ -74,21 +83,13 @@ body, html {
     align-items: center;
 }
 
-menu {
-
-}
-
 menu > ul {
     display: flex;
     justify-content: center;
 }
 
-menu > ul > li > a {
-    font-family: var(--font0);
-    font-weight: 500;
-    font-size: 17px;
+span > a {
     color: var(--cor2);
-    margin: 40px;
 }
 
 .faixa-top {
@@ -133,7 +134,7 @@ menu > ul > li > a {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--cor1);
+    background-color: var(--cor4);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
@@ -156,7 +157,7 @@ menu > ul > li > a {
     justify-content: center;
     align-items: center;
     position: relative;
-    background-color: var(--cor1);
+    background-color: var(--cor2);
     width: 100%;
     padding: 50px 0;
     font-family: var(--font0);
@@ -203,9 +204,15 @@ menu > ul > li > a {
 } 
 
 .taca {
-    width: 40px;
-    padding: 25px;
     position: absolute;
-    right: 0;
     bottom: 0;
+    right: 0;
+    width: 40px;
+    margin: 30px;
+    transition: all 300ms; 
+}
+
+.taca:hover {
+    transition: all .3s;
+    transform: scale(1.20);
 }

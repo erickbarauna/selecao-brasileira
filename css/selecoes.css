@@ -8,6 +8,8 @@
     --cor2: #14b557;
     --cor3: #fff700;
     --cor4: #0366c2;
+    --cor5: #ffffff;
+    --cor6: #dad8d5;
     
     --font0: 'Poppins', 'arial';
 }
@@ -20,19 +22,26 @@
 }
 
 .main-selecoes {
-    padding: 20px 0px 0 0;
+    padding: 50px 0;
+    background-color: var(--cor6);
 }
 
 .container {
     display: flex;
     justify-content: center;
-    margin: 20px 20px 50px 20px;
+    margin: 30px;
+}
+
+.container:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.container:first-child {
+    margin: 0px 20px 50px 20px;
 }
 
 .container-selecoes {
     display: inline-block;
-    margin: 2px;
-    padding: 5px;
 }
 
 .selecoes {
@@ -43,6 +52,7 @@
     flex-wrap: wrap;
     padding: 25px;
     transition: all 300ms; 
+    background-color: var(--cor5);
 }
 
 .foto-esquerda {

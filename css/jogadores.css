@@ -9,6 +9,7 @@
     --cor3: #fff700;
     --cor4: #0366c2;
     --cor5: #ffffff;
+    --cor6: #dad8d5;
     
     --font0: 'Poppins', 'arial';
 }
@@ -17,6 +18,7 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+    background-color: var(--cor6);
 }
 
 .container-position-centro {

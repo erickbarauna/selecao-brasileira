@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+/* 
+Typical Device Breakpoints
+--------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px 
+Tablet: 768px atpe 992px 
+Desktop: 992px até 1200px
+Grandes: acima de 1200px
+*/
+
+@media (max-width: 1700px) {
+    /*SELEÇÕES*/
+    .selecoes {
+        display: block;
+    }
+
+    .texto-selecoes {
+        text-align: center;
+        margin: 20px 10px;
+    }
+    /*SELEÇÕES*/
+}
+
+@media (max-width: 984px) {
+    /*INDEX*/
+    .logo-footer {
+        margin-bottom: 0;
+    }
+    /*INDEX*/
+
+    /*JOGADORES*/
+    .jogador {
+        display: block;
+    }
+    
+    .texto {
+        margin: 0 10px 20px 10px;
+    }
+    /*JOGADORES*/
+}
+
+@media (max-width: 768px) {
+    /*INDEX*/
+    .rumo-ao-hexa {
+        display: none;
+    }
+
+    .container-menu {
+        justify-content: end;
+    }
+
+    .cta span {
+        font-size: 16px;
+    }
+
+    .lista-footer {
+        margin-bottom: 100px;
+    }
+
+    .taca {
+        right: auto;
+        margin: 0 0 35px 0;
+    }
+    /*INDEX*/
+
+    /*JOGADORES*/
+    .texto > h1 {
+        font-size: 35px;
+    }
+
+    .texto > p {
+        font-size: 15px;
+    }
+    /*JOGADORES*/
+
+    /*SELEÇÕES*/
+    .texto-selecoes  > h1 {
+        font-size: 35px;
+    }
+
+    .texto-selecoes > p {
+        font-size: 15px;
+    }
+    /*SELEÇÕES*/
+}
+
+@media (max-width: 445px) {
+    /*INDEX*/
+    .container-header {
+        height: 115px;
+        padding: 10px 0 20px 10px;
+    }
+
+    .logo-top > img {
+        width: 80px;
+    }
+
+    menu {
+        width: auto;
+        position: none;
+        top: 23%;
+        right: 0%;
+    }
+
+    menu > ul {
+        display: block;
+        justify-content: end;
+    }
+
+    menu > ul > li {
+        margin-top: 10px;
+    }
+
+    .cta span {
+        font-size: 15px;
+    }
+
+    .logo-footer {
+        width: 70px;
+    }
+    /*INDEX*/
+
+    /*JOGADORES*/
+    .texto > h1 {
+        font-size: 27px;
+    }
+
+    .texto > p {
+        font-size: 14px;
+    }
+    /*JOGADORES*/
+
+    /*SELEÇÕES*/
+    .texto-selecoes  > h1 {
+        font-size: 26px;
+    }
+
+    .texto-selecoes > p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    /*SELEÇÕES*/
+}
+
+@media (max-width: 300px) {
+    /*INDEX*/
+    .logo-footer {
+        margin: 10px;
+    }
+
+    .lista-footer {
+        margin: 0px 0px 60px 0px;
+    }
+    /*INDEX*/
+}
